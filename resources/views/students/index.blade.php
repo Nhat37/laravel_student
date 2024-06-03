@@ -64,9 +64,12 @@
                     @endif
                 </tbody>
             </table>
-            {!! $students->links() !!}
-        </div>
+        </div>        
     </div>
-    <div class="card-footer text-muted">Footer</div>
+    <div class="card-footer text-muted">
+        <div class="d-flex justify-content-center mt-3">
+            {{ $students->links('pagination::bootstrap-4') }}
+        </div>        
+    </div>
 </div>
 @endsection
